@@ -1,11 +1,13 @@
 window.onload = function() {
 
     var randomNumberTarget = Math.floor((Math.random() * 30) + 30);
+    var score = 0;
 
     console.log("random number is" + " " + randomNumberTarget);
-
     $("#number-to-guess").append(randomNumberTarget);
-    var score = 0;
+    $("#score-text").html("your score is" + " " + score); //sets the score for the begining of the game
+
+
     var scoreNumberForCristals = [1, 10, 3, 7]
 
     function shuffle(arrey) {
@@ -27,6 +29,7 @@ window.onload = function() {
 
     }
 
+
     arr = shuffle(scoreNumberForCristals);
 
     for (var i = 0; i < arr.length; i++) {
@@ -39,19 +42,34 @@ window.onload = function() {
         $("#crystals").append(imageCrystal);
 
     }
-    $(".crystal-image").click(function() {
+    var clickFunction = $(".crystal-image");
+
+
+    clickFunction.click(function count(num) {
         var crystalValue = ($(this).attr("data-crystalvalue"));
         crystalValue = parseInt(crystalValue); //returns integer from string
         score += crystalValue; // adds values to score each time cristal is clicked
 
-        alert("New score: " + score);
+
+        // alert("New score: " + score);
 
         if (score === randomNumberTarget) {
-            alert("You win!");
-        } else if (score >= randomNumberTarget) {
+            alert("Win!!");
+            count();
+            score = 0;
+
+
+
+        } else
+        if (score >= randomNumberTarget) {
             alert("You lose!!");
+
+
         }
 
 
+        $("#score-text").html("your score is" + " " + score) // updates the score
+
     })
+
 }
