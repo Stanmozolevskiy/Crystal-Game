@@ -7,24 +7,61 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
     <title>simple crystal game</title>
+    <audio id="audio" type="audio/mp3" src="assets/audio/crystal_sound.mp3" preload></audio>
+    <audio id="audio-win" type="audio/mp3" src="assets/audio/win.mp3" preload></audio>
+    <audio id="audio-lose" type="audio/mp3" src="assets/audio/lose.mp3" preload></audio>
 
 </head>
 
 <body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                <div id="score-text"></div>
+            </h1>
+            <p class="lead">Take a look at all the crystals below, and take note of which ones your eyes linger on. </p>
+            <p>Click the stones you feel most attracted to. Don’t overthink it, trust yourself! </p>
+        </div>
+    </div>
     <h1>
         <div id="score-text"></div>
     </h1>
-    <h1>Number to Guess:<span id="number-to-guess"></span>
+    <h1>
+        <div id="wins-text"></div>
+    </h1>
+    <br>
+    <br>
+    <h1>
+        <div id="loses-text"></div>
     </h1>
 
 
-    <div id="crystals"></div>
+
+    <div id="crystals">
+        <img class="crystal-image" id="image0" data-score="" src="assets/images/crystal1.gif">
+
+        <img class="crystal-image" id="image1" data-score="" src="assets/images/crystal2.gif">
+
+        <img class="crystal-image" id="image2" data-score="" src="assets/images/crystal4.gif ">
+
+        <img class="crystal-image" id="image3" data-score="" src="assets/images/crystal3.gif">
+    </div>
 
 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">
+                Number to Guess:<span id="number-to-guess">
+                </h1>
+
+        </div>
+    </div>
 
 </body>
 
