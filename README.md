@@ -7,7 +7,7 @@ This is a Node project that utilises:
   
  The point of the game is to get exact amount of the crystal. Each cristal has differrent value. 
 
-https://stanmozolevskiy.github.io/CrystalGame/index.html
+https://stanmozolevskiy.github.io/Crystal-Game/index.html
 
 
 <img src="https://github.com/Stanmozolevskiy/unit-4-game/blob/master/assets/images/crystal1.gif" width="200" height="200">|<img src="https://github.com/Stanmozolevskiy/unit-4-game/blob/master/assets/images/crystal2.gif" width="200" height="200" display="inline-block">|<img src="https://github.com/Stanmozolevskiy/unit-4-game/blob/master/assets/images/crystal3.gif" width="200" height="200" display="inline-block">|<img src="https://github.com/Stanmozolevskiy/unit-4-game/blob/master/assets/images/crystal4.gif" width="200" height="200" display="inline-block">
